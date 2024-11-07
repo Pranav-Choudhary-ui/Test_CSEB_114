@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Stack Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>MERN Stack Quiz</h1>
+        <div id="quiz">
+            <div id="question-container">
+                <p id="question">Question</p>
+            </div>
+            <form id="options-form">
+                <div class="option">
+                    <input type="radio" id="option1" name="option" value="0">
+                    <label for="option1" id="label0">Option 1</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="option2" name="option" value="1">
+                    <label for="option2" id="label1">Option 2</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="option3" name="option" value="2">
+                    <label for="option3" id="label2">Option 3</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="option4" name="option" value="3">
+                    <label for="option4" id="label3">Option 4</label>
+                </div>
+            </form>
+            <div class="navigation-buttons">
+                <button id="prevBtn" disabled>Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+        <div id="result" class="hidden">
+            <h2>Your Score: <span id="score"></span>/<span id="total"></span></h2>
+            <p id="message"></p>
+            <button id="restartBtn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
